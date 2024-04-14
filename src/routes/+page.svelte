@@ -2,7 +2,7 @@
 	import { Button } from '$lib/components/ui/button';
 </script>
 
-<div class="mt-10 flex flex-col items-center justify-center gap-4">
+<div class="relative mt-10 flex flex-col items-center justify-center gap-4 overflow-x-clip">
 	<div class="flex flex-col items-center justify-center text-center">
 		<h1 class="max-w-[15ch] text-6xl font-bold">
 			<span class="relative"
@@ -97,10 +97,36 @@
 			</span>
 		</h1>
 		<p class="max-w-[60ch] leading-5">
-			Dive into our vast array of meticulously crafted recipes, each accompanied by step-by-step
+			Dive into our vast array of meticulously crafted recipes, each accompanied by
+			<span class="relative"
+				>step-by-step
+				<svg
+					class="absolute bottom-1/2 right-1/2 -z-10 w-10 translate-x-1/2 translate-y-1/2 scale-x-[2.5] text-green-400"
+					viewBox="0 0 104 73"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M57.1576 7.44863C53.831 5.16772 51.182 3.5966 47.193 3.21034C43.8401 2.88567 40.4399 2.98776 37.104 3.43439C27.4742 4.72371 18.5278 10.1981 11.7423 16.9887C4.51029 24.226 -0.0601712 34.0308 0.892389 44.4084C2.03799 56.8891 11.2616 65.8317 22.6653 69.7276C37.5325 74.8068 55.3079 71.9896 69.5261 65.9911C82.4612 60.534 98.1688 50.2841 102.471 35.9373C106.219 23.4392 95.872 11.7376 85.8562 5.97051C77.5557 1.19116 67.8156 -0.854239 58.4918 2.0932C51.6146 4.26724 44.7193 7.80313 39.1564 12.4182C32.891 17.616 28.6773 24.2755 24.1785 30.9319"
+						stroke="currentColor"
+						stroke-width="4"
+						stroke-linecap="round"
+					/>
+				</svg>
+			</span>
 			instructions for a seamless cooking experience.
 		</p>
 	</div>
-	<Button>Get Started</Button>
+	<Button class="px-5 py-5">Find Recipe</Button>
 	<img src="/cook.svg" alt="" class="w-96" />
+	<img
+		src="/food.webp"
+		alt=""
+		class="absolute -right-32 top-1/2 -z-10 w-[800px] -translate-y-1/2 -rotate-12 scale-x-[-1]"
+	/>
+	<img
+		class="absolute -left-10 top-1/2 -z-10 w-60 -translate-y-1/2 rotate-45"
+		src="/justSomeGrid.svg"
+		alt=""
+	/>
 </div>
