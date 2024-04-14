@@ -26,7 +26,7 @@
 <form method="POST" use:enhance class="flex items-center justify-center text-center">
 	<Form.Field {form} name="searchQuery">
 		<Form.Control let:attrs>
-			<Form.Label class="text-7xl font-bold">
+			<Form.Label class="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
 				<span class="relative">
 					Search
 					<svg
