@@ -39,6 +39,7 @@
 	"dependencies": {
 		"@auth/prisma-adapter": "^1.6.0",
 		"@auth/sveltekit": "^0.15.0",
+		"@fontsource/poppins": "^5.0.13",
 		"@prisma/client": "^5.12.1",
 		"bits-ui": "^0.21.3",
 		"clsx": "^2.1.0",
