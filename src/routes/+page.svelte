@@ -99,9 +99,9 @@
 		<p class="max-w-[60ch] leading-5">
 			Dive into our vast array of meticulously crafted recipes, each accompanied by
 			<span class="relative"
-				>step-by-step
+				>detailed ingredients
 				<svg
-					class="absolute bottom-1/2 right-1/2 -z-10 w-10 translate-x-1/2 translate-y-1/2 scale-x-[2.5] text-green-400"
+					class="absolute bottom-1/2 right-1/2 -z-10 w-10 translate-x-1/2 translate-y-1/2 scale-x-[4] text-green-400"
 					viewBox="0 0 104 73"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@
 					/>
 				</svg>
 			</span>
-			instructions for a seamless cooking experience.
+			for a seamless cooking experience.
 		</p>
 	</div>
 	<Button class="px-5 py-5">Find Recipe</Button>

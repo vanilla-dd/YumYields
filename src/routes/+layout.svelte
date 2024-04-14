@@ -2,7 +2,7 @@
 	import '../app.pcss';
 	import { page } from '$app/stores';
 	import { cn } from '$lib/utils';
-	$: currentPage = $page.route.id;
+	$: currentPage = $page.route.id ?? '';
 </script>
 
 <main class="min-h-dvh w-full">
@@ -30,7 +30,9 @@
 					currentPage === '/recipe' ? 'w-14' : '',
 					currentPage === '/ai' ? 'left-20 w-14 scale-x-150' : '',
 					currentPage === '/random' ? 'right-16 w-14 scale-x-110' : '',
-					currentPage === '/' ? 'pointer-events-none opacity-0' : '',
+					['/random', '/recipe', '/ai'].indexOf(currentPage) === -1
+						? 'pointer-events-none opacity-0'
+						: '',
 					'absolute bottom-0 text-yellow-400'
 				)}
 				viewBox="0 0 257 40"

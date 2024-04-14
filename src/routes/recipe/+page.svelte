@@ -18,7 +18,10 @@
 {:then recipes}
 	<div class="flex flex-wrap items-stretch justify-center gap-4">
 		{#each recipes.hits as recipe}
-			<a href="/recipe/${recipe.recipe.id}" class="flex w-80 flex-col gap-4 border px-4 py-4">
+			<a
+				href="/recipe/{recipe.recipe.uri.split('_')[1]}"
+				class="flex w-80 flex-col gap-4 border px-4 py-4"
+			>
 				<img src={recipe.recipe.image} alt="" class="aspect-video w-full object-cover" />
 				<p class="max-w-[30ch]">{recipe.recipe.label}</p>
 				<!-- {JSON.stringify(recipe)} -->
