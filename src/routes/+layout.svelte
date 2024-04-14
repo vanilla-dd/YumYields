@@ -28,8 +28,8 @@
 			<!-- <li class="transition-colors hover:text-zinc-500"> -->
 			<!-- <a href="/random">Random</a> -->
 			<!-- </li> -->
-			<li class="transition-colors hover:cursor-not-allowed hover:text-zinc-500">
-				<a href="/profile" class="pointer-events-none">Profile</a>
+			<li class="transition-colors hover:text-zinc-500">
+				<a href="/profile">Profile</a>
 			</li>
 			<svg
 				class={cn(
