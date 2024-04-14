@@ -6,15 +6,17 @@
 </script>
 
 <main class="min-h-dvh w-full">
-	<nav class="sticky top-0 z-50 flex w-full justify-between border-b bg-white px-4 py-3 shadow-md">
+	<nav
+		class="sticky top-0 z-50 flex w-full justify-between border-b bg-white px-2 py-3 shadow-md md:px-4"
+	>
 		<div>
 			<a
 				href="/"
-				class="border-b-4 px-2 pt-2 text-lg font-extrabold tracking-widest text-black transition-colors duration-200 hover:border-b-black hover:text-black/70"
+				class="border-b-2 px-2 pt-2 text-xs font-extrabold tracking-widest text-black transition-colors duration-200 hover:border-b-black hover:text-black/70 md:border-b-4 md:text-lg"
 				>YumYields.</a
 			>
 		</div>
-		<ul class="relative flex items-center gap-4">
+		<ul class="relative flex items-center gap-2 text-xs md:gap-4 md:text-sm lg:text-base">
 			<li class="transition-colors hover:text-zinc-500">
 				<a href="/recipe">Recipe</a>
 			</li>
@@ -29,8 +31,8 @@
 			<li class="transition-colors hover:text-zinc-500"><a href="/profile">Profile</a></li>
 			<svg
 				class={cn(
-					currentPage === '/recipe' ? 'w-14' : '',
-					currentPage === '/ai' ? 'right-24 w-14 scale-x-150' : '',
+					currentPage === '/recipe' ? 'w-10 lg:w-14' : '',
+					currentPage === '/ai' ? 'right-14 w-12 scale-x-150 lg:right-24 lg:w-14' : '',
 					// currentPage === '/random' ? 'right-16 w-14 scale-x-110' : '',
 					['/random', '/recipe', '/ai'].indexOf(currentPage) === -1
 						? 'pointer-events-none opacity-0'

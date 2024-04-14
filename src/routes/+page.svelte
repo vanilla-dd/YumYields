@@ -5,11 +5,11 @@
 
 <div class="relative mt-10 flex flex-col items-center justify-center gap-4 overflow-x-clip">
 	<div class="flex flex-col items-center justify-center text-center">
-		<h1 class="max-w-[15ch] text-6xl font-bold">
+		<h1 class="max-w-[15ch] text-4xl font-bold md:text-5xl lg:text-6xl">
 			<span class="relative"
 				>Everyone
 				<svg
-					class="absolute -left-8 -top-3 h-10 w-10 text-yellow-600"
+					class="absolute -left-6 -top-2 h-8 w-8 text-yellow-600 md:h-10 md:w-10 lg:-left-8 lg:-top-3"
 					viewBox="0 0 115 98"
 					fill="none"
 					xmlns="http//www.w3.org/2000/svg"
@@ -41,7 +41,7 @@
 			<span class="relative"
 				>Chef
 				<svg
-					class="absolute -right-12 -top-2 h-10 w-10 text-red-600"
+					class="absolute -right-6 top-0 h-6 w-6 text-red-600 md:-right-12 md:-top-2 md:h-10 md:w-10"
 					viewBox="0 0 82 84"
 					fill="none"
 					xmlns="http//www.w3.org/2000/svg"
@@ -97,12 +97,12 @@
 				</svg>
 			</span>
 		</h1>
-		<p class="max-w-[60ch] leading-5">
+		<p class="max-w-[60ch] text-xs leading-3 md:text-sm md:leading-4 lg:text-base lg:leading-5">
 			Dive into our vast array of meticulously crafted recipes, each accompanied by
 			<span class="relative"
 				>detailed ingredients
 				<svg
-					class="absolute bottom-1/2 right-1/2 -z-10 w-10 translate-x-1/2 translate-y-1/2 scale-x-[4] text-green-400"
+					class="absolute bottom-1/2 right-[68px] -z-10 w-8 translate-y-1/2 scale-150 text-green-400 lg:right-1/2 lg:w-10 lg:translate-x-1/2 lg:scale-x-[4]"
 					viewBox="0 0 104 73"
 					fill="none"
 					xmlns="http//www.w3.org/2000/svg"
@@ -118,12 +118,12 @@
 			for a seamless cooking experience.
 		</p>
 	</div>
-	<Button href="/recipe" class="px-5 py-5">Find Recipe</Button>
-	<img src="/cook.svg" alt="" class="w-96" />
-	<div class="flex gap-10">
-		<img src="/recipes.webp" alt="" class="w-96 self-start" />
-		<div class="flex max-w-[80ch] flex-col items-center gap-4 pt-10">
-			<p class="text-center text-3xl font-bold">
+	<Button href="/recipe" class="md:px-5 md:py-5">Find Recipe</Button>
+	<img src="/cook.svg" alt="" class="-z-20 w-96" />
+	<div class="flex flex-col sm:flex-row lg:gap-10">
+		<img src="/recipes.webp" alt="" class="w-72 self-start md:w-96" />
+		<div class="flex max-w-[80ch] flex-col items-center gap-4 lg:pt-10">
+			<p class="px-6 text-center text-xl font-bold md:text-3xl">
 				<span class="relative">
 					AI
 					<svg
@@ -148,37 +148,47 @@
 				</span>
 				Recipe Wizard Let Artificial Intelligence Whip Up Your Next Culinary Creation!
 			</p>
-			<div class="mb-10 grid grid-cols-2 grid-rows-5 justify-center gap-x-4 gap-y-2">
+			<div
+				class="mb-10 grid grid-cols-2 grid-rows-5 items-start justify-center gap-x-2 gap-y-1 px-2 md:gap-x-4 md:gap-y-2"
+			>
 				<div
-					class="row-span-2 max-w-[30ch] rounded-md border bg-zinc-700 px-4 pb-2 pt-4 text-white"
+					class="row-span-2 max-w-[30ch] rounded-md border bg-zinc-700 px-2 py-2 text-white lg:px-4 lg:pb-2 lg:pt-4"
 				>
-					<p class="pb-1 font-bold leading-5">Transform Leftovers into Gourmet.</p>
+					<p class="pb-1 text-xs font-semibold leading-5 md:text-sm lg:text-base">
+						Transform Leftovers into Gourmet.
+					</p>
 					<p class="text-xs leading-4">
 						Say goodbye to food waste as our AI turns leftovers into delectable dishes.
 					</p>
 				</div>
 				<div
-					class="col-start-2 row-span-2 row-start-2 max-w-[30ch] rounded-md border bg-zinc-700 px-4 pb-2 pt-4 text-white"
+					class="col-start-2 row-span-2 row-start-2 max-w-[30ch] rounded-md border bg-zinc-700 px-2 py-2 text-white lg:px-4 lg:pb-2 lg:pt-4"
 				>
-					<p class="pb-1 font-bold leading-5">Tailored to Your Tastes.</p>
+					<p class="pb-1 text-xs font-semibold leading-5 md:text-sm lg:text-base">
+						Tailored to Your Tastes.
+					</p>
 					<p class="text-xs leading-4">
 						Personalized recommendations ensure every dish aligns with your preferences and dietary
 						needs.
 					</p>
 				</div>
 				<div
-					class="col-start-1 row-span-2 max-w-[30ch] rounded-md border bg-zinc-700 px-4 pb-2 pt-4 text-white"
+					class="col-start-1 row-span-2 max-w-[30ch] rounded-md border bg-zinc-700 px-2 py-2 text-white lg:px-4 lg:pb-2 lg:pt-4"
 				>
-					<p class="row-start-3 pb-1 font-bold leading-5">Effortless Meal Planning.</p>
+					<p class="pb-1 text-xs font-semibold leading-5 md:text-sm lg:text-base">
+						Effortless Meal Planning.
+					</p>
 					<p class="text-xs leading-4">
 						Simplify your meal planning process with AI-generated recipes that suit your schedule
 						and ingredients on hand.
 					</p>
 				</div>
 				<div
-					class="row-span-2 max-w-[30ch] rounded-md border bg-zinc-700 px-4 pb-2 pt-4 text-white"
+					class="row-span-2 max-w-[30ch] rounded-md border bg-zinc-700 px-2 py-2 text-white lg:px-4 lg:pb-2 lg:pt-4"
 				>
-					<p class="pb-1 font-bold leading-5">Innovative Flavor Combinations.</p>
+					<p class="pb-1 text-xs font-semibold leading-5 md:text-sm lg:text-base">
+						Innovative Flavor Combinations.
+					</p>
 					<p class="text-xs leading-4">
 						Experience flavor profiles you never thought possible as AI suggests unique ingredient
 						pairings.
@@ -186,7 +196,7 @@
 				</div>
 				<Button href="/ai" class="relative w-fit self-center justify-self-end px-6">
 					<svg
-						class="absolute -left-16 h-10 w-10 rotate-12 scale-150 text-green-500"
+						class="absolute -left-6 h-8 w-8 rotate-12 scale-150 text-green-500 md:h-10 md:w-10 lg:-left-10"
 						viewBox="0 0 355 162"
 						fill="none"
 						xmlns="http://www.w3.org/2000/svg"
@@ -203,11 +213,16 @@
 			</div>
 		</div>
 	</div>
-	<footer class="w-full">
-		<div class="flex justify-between border-t-4 px-4 py-2">
-			<p class="flex gap-2">
+	<footer class="w-full text-xs">
+		<div class="flex justify-between gap-1 border-t-4 px-2 py-2 md:gap-2 md:px-4">
+			<p class="flex gap-1 md:gap-2">
 				Made with
-				<svg class="h-6 w-6" viewBox="0 0 99 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<svg
+					class="h-4 w-4 md:h-6 md:w-6"
+					viewBox="0 0 99 91"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
 					<path
 						d="M46.5897 90C32.2617 82.5795 21.668 75.8216 13.4112 62.0208C9.00167 54.6506 4.91717 47.0127 2.69169 38.6607C-0.54097 26.5288 0.793624 10.3852 12.9895 3.52983C28.1392 -4.9859 49.2008 9.31642 45.2853 26.7698C45.1636 27.3123 43.6421 30.6293 44.4297 28.79C48.6716 18.8834 61.263 9.74938 71.1476 6.48662C86.7877 1.32402 97.7846 9.63273 97.1912 26.0637C96.7624 37.9369 88.4709 51.895 80.1949 60.0373C70.4344 69.6401 57.315 75.4033 50.4294 87.5728"
 						stroke="red"
@@ -225,10 +240,10 @@
 	<img
 		src="/food.webp"
 		alt=""
-		class="absolute -right-32 top-72 -z-10 w-[800px] -translate-y-1/2 -rotate-12 scale-x-[-1]"
+		class="absolute -right-14 -top-0 -z-10 hidden w-72 -rotate-12 scale-x-[-1] sm:block md:w-[450px] lg:-right-32 lg:top-72 lg:w-[800px] lg:-translate-y-1/2"
 	/>
 	<img
-		class="absolute -left-10 top-72 -z-10 w-60 -translate-y-1/2 rotate-45"
+		class="absolute -left-10 -top-16 -z-10 w-40 rotate-45 md:w-52 lg:-left-10 lg:top-72 lg:w-60 lg:-translate-y-1/2"
 		src="/justSomeGrid.svg"
 		alt=""
 	/>
