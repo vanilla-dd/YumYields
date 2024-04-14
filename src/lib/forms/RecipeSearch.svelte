@@ -50,9 +50,9 @@
 					{...attrs}
 					bind:value={$formData.searchQuery}
 					placeholder="Vegan Croissant"
-					class="font-demibold h-12 text-xl"
+					class="font-demibold text-base lg:h-12 lg:text-xl"
 				/>
-				<Form.Button class="absolute right-1 top-5 w-20">Submit</Form.Button>
+				<Form.Button class="absolute right-1 top-4 lg:top-5 lg:w-20">Submit</Form.Button>
 			</div>
 		</Form.Control>
 		<Form.FieldErrors class="text-start" />

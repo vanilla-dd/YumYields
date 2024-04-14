@@ -34,7 +34,9 @@
 			<svg
 				class={cn(
 					currentPage === '/recipe' ? 'w-10 lg:w-14' : '',
-					currentPage === '/ai' ? 'right-14 w-12 scale-x-150 lg:right-24 lg:w-14' : '',
+					currentPage === '/ai'
+						? 'right-14 w-12 scale-x-150 md:right-20 md:scale-x-[2] lg:right-24 lg:w-14'
+						: '',
 					// currentPage === '/random' ? 'right-16 w-14 scale-x-110' : '',
 					['/random', '/recipe', '/ai'].indexOf(currentPage) === -1
 						? 'pointer-events-none opacity-0'

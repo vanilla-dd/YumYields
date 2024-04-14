@@ -4,12 +4,13 @@
 	let prompt: string;
 	let recipe: string;
 	const getRecipe = async () => {
+		recipe = 'loading...';
 		const res = await fetch('/api/aiRecipe', { body: JSON.stringify(prompt), method: 'POST' });
 		recipe = await res.text();
 	};
 </script>
 
-<div class="flex flex-col items-center justify-center gap-4">
+<div class="flex flex-col items-center justify-center gap-4 px-4">
 	<p class="text-center text-4xl">Generate Recipes With AI</p>
 	<div class="flex w-fit items-center justify-center">
 		<Input bind:value={prompt} placeholder="Make me a pizza" />
@@ -21,6 +22,6 @@
 		>
 	</div>
 	<div class="max-w-[150ch] text-center">
-		{@html recipe}
+		{@html recipe ?? ''}
 	</div>
 </div>
