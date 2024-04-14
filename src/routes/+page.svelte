@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button';
+	import { TriangleAlert } from 'lucide-svelte';
 </script>
 
 <div class="relative mt-10 flex flex-col items-center justify-center gap-4 overflow-x-clip">
@@ -11,7 +12,7 @@
 					class="absolute -left-8 -top-3 h-10 w-10 text-yellow-600"
 					viewBox="0 0 115 98"
 					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
+					xmlns="http//www.w3.org/2000/svg"
 				>
 					<path
 						d="M1.96056 72.4776C2.11526 72.1427 2.61932 71.3858 3.47274 70.2068C4.32617 69.0278 5.12206 67.971 5.86041 67.0365C6.59877 66.102 7.54001 64.8843 8.68414 63.3832C9.82849 61.8822 10.7074 60.7311 11.3207 59.9299C11.9341 59.1285 12.5843 58.2841 13.2713 57.3967C13.9584 56.509 15.1275 54.993 16.7787 52.8487C18.4299 50.7043 20.1083 48.5845 21.8138 46.4892C23.5193 44.3939 24.8029 42.8334 25.6647 41.8077C26.5262 40.7821 27.2318 39.9321 27.7814 39.258C28.3309 38.5838 29.2978 37.4637 30.6822 35.8979C32.0668 34.332 33.1765 33.0913 34.0112 32.176C34.8462 31.2609 35.6647 30.3806 36.4668 29.535C37.2686 28.6897 38.0465 27.8696 38.8004 27.0747C39.5543 26.2796 40.7613 25.0652 42.4216 23.4316C44.0818 21.7979 45.4922 20.4434 46.6528 19.3679C47.8133 18.2927 48.6809 17.4937 49.2556 16.9708C49.8305 16.4479 50.4121 15.9271 51.0005 15.4083C51.5889 14.8892 52.4073 14.182 53.4557 13.2864C54.5041 12.3909 55.6724 11.4026 56.9604 10.3215"
@@ -43,7 +44,7 @@
 					class="absolute -right-12 -top-2 h-10 w-10 text-red-600"
 					viewBox="0 0 82 84"
 					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
+					xmlns="http//www.w3.org/2000/svg"
 				>
 					<path
 						d="M41.5816 1.21606C39.7862 5.82482 40.3852 10.0977 40.5593 14.9633C40.7854 21.2812 40.9774 27.5593 41.4363 33.8661"
@@ -104,7 +105,7 @@
 					class="absolute bottom-1/2 right-1/2 -z-10 w-10 translate-x-1/2 translate-y-1/2 scale-x-[4] text-green-400"
 					viewBox="0 0 104 73"
 					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
+					xmlns="http//www.w3.org/2000/svg"
 				>
 					<path
 						d="M57.1576 7.44863C53.831 5.16772 51.182 3.5966 47.193 3.21034C43.8401 2.88567 40.4399 2.98776 37.104 3.43439C27.4742 4.72371 18.5278 10.1981 11.7423 16.9887C4.51029 24.226 -0.0601712 34.0308 0.892389 44.4084C2.03799 56.8891 11.2616 65.8317 22.6653 69.7276C37.5325 74.8068 55.3079 71.9896 69.5261 65.9911C82.4612 60.534 98.1688 50.2841 102.471 35.9373C106.219 23.4392 95.872 11.7376 85.8562 5.97051C77.5557 1.19116 67.8156 -0.854239 58.4918 2.0932C51.6146 4.26724 44.7193 7.80313 39.1564 12.4182C32.891 17.616 28.6773 24.2755 24.1785 30.9319"
@@ -117,15 +118,117 @@
 			for a seamless cooking experience.
 		</p>
 	</div>
-	<Button class="px-5 py-5">Find Recipe</Button>
+	<Button href="/recipe" class="px-5 py-5">Find Recipe</Button>
 	<img src="/cook.svg" alt="" class="w-96" />
+	<div class="flex gap-10">
+		<img src="/recipes.webp" alt="" class="w-96 self-start" />
+		<div class="flex max-w-[80ch] flex-col items-center gap-4 pt-10">
+			<p class="text-center text-3xl font-bold">
+				<span class="relative">
+					AI
+					<svg
+						class="absolute -left-10 -top-8 h-10 w-10 rotate-90 text-red-600"
+						viewBox="0 0 162 119"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M0.913757 114.53C13.9807 116.216 32.3056 122.378 43.7012 113.083C51.0025 107.128 57.0714 99.6064 62.6869 92.0921C73.647 77.4257 81.4769 57.0014 83.9262 38.9656C86.7749 17.9886 65.2558 22.4197 58.3958 36.6239C48.6178 56.8698 53.4826 94.2165 79.0133 100.444C108.309 107.591 123.562 71.7844 130.096 49.9154C134.773 34.2631 153.849 -9.9389 143.644 2.81731C137.309 10.736 128.12 15.6577 122.008 23.6058C118.81 27.7641 121.911 27.9558 125.382 25.0963C131.067 20.4118 136.477 14.6482 140.667 8.60318C141.379 7.57589 145.275 0.763508 146.837 3.12604C151.902 10.7886 153.525 20.5514 158.568 28.4832"
+							stroke="currentColor"
+							stroke-width="4"
+							stroke-linecap="round"
+						/>
+						<path
+							d="M132.848 24.4348C141.945 26.8851 150.961 28.4036 160.05 30.4235C162.841 31.0437 159.046 30.7305 158.171 30.7851"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+						/>
+					</svg>
+				</span>
+				Recipe Wizard Let Artificial Intelligence Whip Up Your Next Culinary Creation!
+			</p>
+			<div class="mb-10 grid grid-cols-2 grid-rows-5 justify-center gap-x-4 gap-y-2">
+				<div
+					class="row-span-2 max-w-[30ch] rounded-md border bg-zinc-700 px-4 pb-2 pt-4 text-white"
+				>
+					<p class="pb-1 font-bold leading-5">Transform Leftovers into Gourmet.</p>
+					<p class="text-xs leading-4">
+						Say goodbye to food waste as our AI turns leftovers into delectable dishes.
+					</p>
+				</div>
+				<div
+					class="col-start-2 row-span-2 row-start-2 max-w-[30ch] rounded-md border bg-zinc-700 px-4 pb-2 pt-4 text-white"
+				>
+					<p class="pb-1 font-bold leading-5">Tailored to Your Tastes.</p>
+					<p class="text-xs leading-4">
+						Personalized recommendations ensure every dish aligns with your preferences and dietary
+						needs.
+					</p>
+				</div>
+				<div
+					class="col-start-1 row-span-2 max-w-[30ch] rounded-md border bg-zinc-700 px-4 pb-2 pt-4 text-white"
+				>
+					<p class="row-start-3 pb-1 font-bold leading-5">Effortless Meal Planning.</p>
+					<p class="text-xs leading-4">
+						Simplify your meal planning process with AI-generated recipes that suit your schedule
+						and ingredients on hand.
+					</p>
+				</div>
+				<div
+					class="row-span-2 max-w-[30ch] rounded-md border bg-zinc-700 px-4 pb-2 pt-4 text-white"
+				>
+					<p class="pb-1 font-bold leading-5">Innovative Flavor Combinations.</p>
+					<p class="text-xs leading-4">
+						Experience flavor profiles you never thought possible as AI suggests unique ingredient
+						pairings.
+					</p>
+				</div>
+				<Button href="/ai" class="relative w-fit self-center justify-self-end px-6">
+					<svg
+						class="absolute -left-16 h-10 w-10 rotate-12 scale-150 text-green-500"
+						viewBox="0 0 355 162"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M3 153.9C19.7648 151.422 58.3853 148.645 58.3853 123.767C58.3853 109.758 41.9931 109.583 35.4673 119.947C29.8677 128.841 29.3802 151.014 41.6212 155.385C68.0833 164.836 96.3337 155.089 121.41 146.367C158.021 133.632 195.283 106.274 215.841 72.7318C223.827 59.7017 248.721 3.98332 214.143 3.02276C159.312 1.49957 148.663 76.8016 170.111 114.748C179.098 130.649 200.663 140.818 217.963 143.29C237.073 146.02 266.527 131.63 270.271 111.035C273.351 94.0976 254.758 100.754 250.43 111.884C244.084 128.203 258.692 140.196 273.773 140.531C298.453 141.08 318.113 127.233 334.463 109.974C339.288 104.881 348.912 91.2687 350.484 84.1909C351.915 77.7539 351.661 81.7626 350.697 86.1007C349.794 90.1648 352.5 94.2726 352.5 98.5146C352.5 100.006 350.591 90.7585 350.591 88.0105C350.591 74.942 333.087 85.5908 325.763 87.0556"
+							stroke="currentColor"
+							stroke-width="5"
+							stroke-linecap="round"
+						/>
+					</svg>
+					Try it now</Button
+				>
+			</div>
+		</div>
+	</div>
+	<footer class="w-full">
+		<div class="flex justify-between border-t-4 px-4 py-2">
+			<p class="flex gap-2">
+				Made with
+				<svg class="h-6 w-6" viewBox="0 0 99 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M46.5897 90C32.2617 82.5795 21.668 75.8216 13.4112 62.0208C9.00167 54.6506 4.91717 47.0127 2.69169 38.6607C-0.54097 26.5288 0.793624 10.3852 12.9895 3.52983C28.1392 -4.9859 49.2008 9.31642 45.2853 26.7698C45.1636 27.3123 43.6421 30.6293 44.4297 28.79C48.6716 18.8834 61.263 9.74938 71.1476 6.48662C86.7877 1.32402 97.7846 9.63273 97.1912 26.0637C96.7624 37.9369 88.4709 51.895 80.1949 60.0373C70.4344 69.6401 57.315 75.4033 50.4294 87.5728"
+						stroke="red"
+						stroke-width="2"
+						stroke-linecap="round"
+					/>
+				</svg>
+				& Svelte-kit
+			</p>
+			<p class="flex items-center justify-center">
+				<TriangleAlert />The ai response can be unusual please be careful
+			</p>
+		</div>
+	</footer>
 	<img
 		src="/food.webp"
 		alt=""
-		class="absolute -right-32 top-1/2 -z-10 w-[800px] -translate-y-1/2 -rotate-12 scale-x-[-1]"
+		class="absolute -right-32 top-72 -z-10 w-[800px] -translate-y-1/2 -rotate-12 scale-x-[-1]"
 	/>
 	<img
-		class="absolute -left-10 top-1/2 -z-10 w-60 -translate-y-1/2 rotate-45"
+		class="absolute -left-10 top-72 -z-10 w-60 -translate-y-1/2 rotate-45"
 		src="/justSomeGrid.svg"
 		alt=""
 	/>
