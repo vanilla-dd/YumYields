@@ -14,26 +14,28 @@
 				>YumYields.</a
 			>
 		</div>
-		<ul class="relative flex gap-4">
+		<ul class="relative flex items-center gap-4">
 			<li class="transition-colors hover:text-zinc-500">
 				<a href="/recipe">Recipe</a>
 			</li>
+			<hr class="h-3/4 w-[1px] bg-gray-500" />
 			<li class="transition-colors hover:text-zinc-500">
 				<a href="/ai">Ai Generate</a>
 			</li>
-			<li class="transition-colors hover:text-zinc-500">
-				<a href="/random">Random</a>
-			</li>
-			<li class="transition-colors hover:text-zinc-500">Profile</li>
+			<hr class="h-3/4 w-[1px] bg-gray-500" />
+			<!-- <li class="transition-colors hover:text-zinc-500"> -->
+			<!-- <a href="/random">Random</a> -->
+			<!-- </li> -->
+			<li class="transition-colors hover:text-zinc-500"><a href="/profile">Profile</a></li>
 			<svg
 				class={cn(
 					currentPage === '/recipe' ? 'w-14' : '',
-					currentPage === '/ai' ? 'left-20 w-14 scale-x-150' : '',
-					currentPage === '/random' ? 'right-16 w-14 scale-x-110' : '',
+					currentPage === '/ai' ? 'right-24 w-14 scale-x-150' : '',
+					// currentPage === '/random' ? 'right-16 w-14 scale-x-110' : '',
 					['/random', '/recipe', '/ai'].indexOf(currentPage) === -1
 						? 'pointer-events-none opacity-0'
 						: '',
-					'absolute bottom-0 text-yellow-400'
+					'absolute -bottom-1 text-yellow-400'
 				)}
 				viewBox="0 0 257 40"
 				fill="none"
