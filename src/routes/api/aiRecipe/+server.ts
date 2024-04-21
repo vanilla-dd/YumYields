@@ -1,14 +1,13 @@
-import { OPEN_AI_KEY, OPEN_AI_URL } from '$env/static/private';
+import { Groq } from 'groq-sdk';
 import type { RequestHandler } from '@sveltejs/kit';
-import { OpenAI } from 'openai';
+import { AI_API_KEY } from '$env/static/private';
 
 export const POST: RequestHandler = async ({ request }) => {
-	const openai = new OpenAI({
-		apiKey: OPEN_AI_KEY,
-		baseURL: OPEN_AI_URL
+	const groq = new Groq({
+		apiKey: AI_API_KEY
 	});
 	const prompt = await request.json();
-	const chatCompletion = await openai.chat.completions.create({
+	const chatCompletion = await groq.chat.completions.create({
 		messages: [
 			{
 				role: 'system',
@@ -16,8 +15,9 @@ export const POST: RequestHandler = async ({ request }) => {
 			},
 			{ role: 'user', content: prompt }
 		],
-		model: 'gpt-3.5-turbo'
+		model: 'mixtral-8x7b-32768'
 	});
+
 	const recipe = chatCompletion.choices[0].message.content;
 	return new Response(recipe);
 };

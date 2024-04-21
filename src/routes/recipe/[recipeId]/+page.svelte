@@ -19,7 +19,7 @@
 		<!-- {JSON.stringify(recipe.recipe.images)} -->
 		<div class="flex items-start justify-center gap-10">
 			<img src={recipe.recipe.image} class="aspect-[12/20] w-80 object-cover" alt="" />
-			<div>
+			<div class="flex flex-col gap-2">
 				<p class="text-7xl">{recipe.recipe.label}</p>
 				<div class="flex gap-2">
 					<p class="w-fit rounded-sm border px-2 py-1 text-xs">{recipe.recipe.cuisineType}</p>

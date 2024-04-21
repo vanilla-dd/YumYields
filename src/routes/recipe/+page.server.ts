@@ -1,4 +1,4 @@
-import { searchSchema, type RecipeResponse } from '$lib/schema';
+import { searchSchema } from '$lib/schema';
 import { fail, superValidate } from 'sveltekit-superforms';
 import { zod } from 'sveltekit-superforms/adapters';
 import type { Actions, PageServerLoad } from './$types';
