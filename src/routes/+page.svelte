@@ -120,8 +120,8 @@
 	</div>
 	<Button href="/recipe" class="md:px-5 md:py-5">Find Recipe</Button>
 	<img src="/cook.svg" alt="" class="-z-20 w-96" />
-	<div class="flex flex-col sm:flex-row lg:gap-10">
-		<img src="/recipes.webp" alt="" class="w-72 self-start md:w-96" />
+	<div class="flex flex-col items-center justify-center sm:flex-row lg:gap-10">
+		<img src="/recipes.webp" alt="" class="w-72 md:w-96 md:self-start" />
 		<div class="flex max-w-[80ch] flex-col items-center gap-4 lg:pt-10">
 			<p class="px-6 text-center text-xl font-bold md:text-3xl">
 				<span class="relative">
